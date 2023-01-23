@@ -6,7 +6,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    env_file: env
+    env_file:
+      - stack.env
     networks:
       - mail
 networks:
